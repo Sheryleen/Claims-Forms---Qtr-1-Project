@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Manage Claims</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-primary text-white p-4 h2`">
+      Claim Form
+    </nav>
+    <div class="row">
+      <div class="col-3 border-right border-dark vh-100">
+        <div class="card" style="width: 20rem;">
+          <div class="card-body">
+            <a href="/new-claim.html" class="btn-block link text-center h4"
+              >Create New Claim</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <div class="card-body text-center h4">
+            <a href="/index.html" class="btn-block link">Manage Claims</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h1>Claim View</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Claim #</th>
+              <th scope="col">Member Name</th>
+              <th scope="col">Policy #</th>
+              <th scope="col">Vehicle</th>
+              <th scope="col">At Fault</th>
+              <th scope="col">Claimant Name</th>
+              <th scope="col">Claimant Vehicle</th>
+              <th scope="col">Claimant Insurance</th>
+              <th scope="col">Manage</th>
+            </tr>
+          </thead>
+          <tbody id="table"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
